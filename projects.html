@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+
+<head>
+
+  <title>Lu Zhang's Homepage</title>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="description" content="Lu Zhang is currently a assistant professor at university of arkansas">
+  <meta name="keywords" content="Lu Zhang, 张路, luzhang, zhanglu, zhang lu, UARK">
+  <meta name="author" content="Lu Zhang" />
+
+  <link rel="stylesheet" href="css/w3.css">
+  <link rel="stylesheet" href="css/academicons.min.css"/>
+
+  <style>
+  .w3-sidebar a {font-family: "Roboto", sans-serif}
+  body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
+  </style>
+
+</head>
+
+
+<body class="w3-content" style="max-width:1000px">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-collapse w3-top w3-right" style="z-index:3;width:150px" id="mySidebar">
+  <div class="w3-container w3-display-container w3-padding-16">
+    <h3><b>Lu Zhang</b></h3>
+  </div>
+  <div class="w3-padding-64 w3-text-light-grey w3-large" style="font-weight:bold">
+    <a href="index.html" class="w3-bar-item w3-button">Home</a>
+    <!-- <a href="#news" class="w3-bar-item w3-button">News</a> -->
+    <a href="projects.html" class="w3-bar-item w3-button">Projects</a>
+    <a href="teaching.html" class="w3-bar-item w3-button">Teaching</a>
+    <a href="publications.html" class="w3-bar-item w3-button">Publications</a>
+    <a href="contact.html" class="w3-bar-item w3-button">Contact</a>
+    <!-- <a href="#award" class="w3-bar-item w3-button">Awards</a> -->
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-bar w3-top w3-hide-large w3-black w3-xlarge">
+  <div class="w3-bar-item w3-padding-24">Lu Zhang</div>
+  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-24 w3-right"  style="font-stretch: extra-expanded;" onclick="w3_open()"><b>≡</b></a>
+  </div>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:150px">
+
+  <!-- Push down content on small screens -->
+  <div class="w3-hide-large" style="margin-top:83px"></div>
+
+
+<!-- The Projects Section -->
+  <div class="w3-container w3-padding-32" id="projects">
+    <h2>Projects</h2>
+        <h4>Active Projects: </h4>
+		
+		<p>
+        <li><strong>CAREER: Towards Long-term Fairness in Sequential Decision Making</strong>
+        <br>
+        Apr 15, 2022 - Mar 31, 2027 | NSF 2142725
+        </p>
+		
+		<p>
+        <li><strong>III: Small: Counterfactually Fair Machine Learning through Causal Modeling</strong>
+        <br>
+        Oct 1, 2021 - Sep 30, 2024 | NSF 1910284
+        </p>
+
+		<p>
+        <li><strong>RII Track 1: Data Analytics that are Robust and Trusted (DART): From Smart Curation to Socially Aware Decision Making</strong>
+        <br>
+        Jul 1, 2020 - Jun 30, 2025 | NSF 1946391
+        </p>
+		
+        <p>
+        <li><strong>RII Track 2 FEC: Multi-Scale Integrative Approach to Digital Health: Collaborative Research and Education in Smart Health in West Virginia and Arkansas</strong>
+        <br>
+        Aug 1, 2019 - July 31, 2023 | NSF 1920920
+        </p>
+        
+        <br><h4>Completed Projects:</h4>
+
+        <p>
+        <li><strong>EAGER: Causal Bayesian Network-Based Discrimination Discovery and Prevention</strong>
+        <br>
+        Sept 1, 2016 - Aug 31, 2019 | NSF 1646654
+        </p>
+
+        <p>
+        <li><strong>Chancellor’s Discovery, Creativity, Innovation and Collaboration Fund: Towards Fairness Aware Learning in Big Data</strong>
+        <br>
+        Sept 29, 2017 - Sept 28, 2019 | University of Arkansas
+        </p>
+
+  </div>
+
+
+</div>
+
+<script>
+// Accordion 
+function myAccFunc() {
+  var x = document.getElementById("demoAcc");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else {
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+// Click on the "Jeans" link on page load to open the accordion for demo purposes
+document.getElementById("myBtn").click();
+
+
+// Open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+</script>
+
+</body>
+</html>
